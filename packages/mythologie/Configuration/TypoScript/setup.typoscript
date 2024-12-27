@@ -1,0 +1,34 @@
+######################
+#### DEPENDENCIES ####
+######################
+#mask import, news import and bootstrap package
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:mythologie/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        mythologie_scripts = EXT:mythologie/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
